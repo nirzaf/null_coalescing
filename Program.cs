@@ -11,13 +11,12 @@ namespace null_coalescing
             string color =null;
             Console.WriteLine(color ?? "No Color");
 
-            Coalescing cl = new Coalescing();
             string a = "Type";
             string b = "Not null";
 
             Console.WriteLine(b ?? a);
 
-            Console.WriteLine(cl.Nullable());
+            Console.WriteLine(Coalescing.Nullable());
 
             Console.ReadLine();
         }
@@ -25,7 +24,7 @@ namespace null_coalescing
 
     public class Coalescing
     {
-        public string Nullable()
+        public static string Nullable()
         {
             string a = "Type";
             string b = null;
