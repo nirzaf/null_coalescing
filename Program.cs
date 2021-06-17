@@ -8,9 +8,17 @@ namespace null_coalescing
     {
         static void Main(string[] args)
         {
+            string color =null;
+            Console.WriteLine(color ?? "No Color");
+
             Coalescing cl = new Coalescing();
-            cl.Nullable();
-            Console.WriteLine("Hello World!");
+            string a = "Type";
+            string b = "Not null";
+
+            Console.WriteLine(b ?? a);
+
+            Console.WriteLine(cl.Nullable());
+
             Console.ReadLine();
         }
     }
@@ -27,10 +35,12 @@ namespace null_coalescing
         {
             return setsOfNumbers?[indexOfSetToSum]?.Sum() ?? double.NaN;
         }
-        public void Nullable()
+        public string Nullable()
         {
-            var sum = SumNumbers(null, 0);
-            Console.WriteLine(sum);  // output: NaN
+            string a = "Type";
+            string b = null;
+
+            return b ?? a;
         }
     }
 }
