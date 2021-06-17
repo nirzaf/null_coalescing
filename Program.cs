@@ -25,18 +25,10 @@ namespace null_coalescing
 
     public class Coalescing
     {
-        private int? x = null;
-        private int y = 9;
-        public Coalescing()
-        {
-
-        }
-
         public string Nullable()
         {
             string a = "Type";
             string b = null;
-
             return b ?? a;
         }
     }
