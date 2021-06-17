@@ -31,10 +31,7 @@ namespace null_coalescing
         {
 
         }
-        double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
-        {
-            return setsOfNumbers?[indexOfSetToSum]?.Sum() ?? double.NaN;
-        }
+
         public string Nullable()
         {
             string a = "Type";
